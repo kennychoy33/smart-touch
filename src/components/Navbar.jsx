@@ -28,8 +28,8 @@ export default function Navbar() {
               </svg>
             </div>
             <div className="logo-text">
-              <span className="logo-name">Smart Touch</span>
-              <span className="logo-sub">Technology</span>
+              <span className="logo-name">Smartgogo</span>
+              <span className="logo-sub">Workforce Systems</span>
             </div>
           </Link>
 
@@ -45,13 +45,12 @@ export default function Navbar() {
 
           <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
             <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
-            <NavLink to="/products" onClick={closeMenu}>Products</NavLink>
+            <NavLink to="/products" onClick={closeMenu}>Solutions</NavLink>
+            <Link to="/#systems" onClick={closeMenu}>Industries</Link>
             <NavLink to="/about" onClick={closeMenu}>About</NavLink>
             <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
-            <NavLink to="/roi" className="nav-roi" onClick={closeMenu}>ROI Calculator</NavLink>
-            <NavLink to="/tm-vote" onClick={closeMenu}>TM Vote</NavLink>
             <Link to="/contact" className="nav-cta" onClick={closeMenu}>
-              Get a Demo
+              Book a Demo
               <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>

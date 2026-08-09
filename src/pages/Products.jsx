@@ -3,185 +3,167 @@ import './Products.css'
 
 const products = [
   {
-    id: 'smartpay',
-    name: 'SmartPay',
-    subtitle: 'Payroll System',
-    tagline: 'Automate Every Payroll. Never Miss a Compliance Deadline.',
-    color: '#3b82f6',
-    gradient: 'linear-gradient(135deg, #1e40af, #3b82f6)',
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="5" width="20" height="14" rx="2"/>
-        <line x1="2" y1="10" x2="22" y2="10"/>
-        <circle cx="7" cy="15" r="1"/>
-        <line x1="10" y1="15" x2="14" y2="15"/>
-      </svg>
-    ),
-    description: 'SmartPay is Malaysia\'s most comprehensive payroll software — built to handle the complexity of EPF, SOCSO, EIS, and PCB compliance automatically, so your HR team can focus on people, not paperwork.',
-    features: [
-      { title: 'Automated Salary Calculation', desc: 'Full salary, deductions, and allowances calculated accurately in minutes' },
-      { title: 'EPF, SOCSO, EIS & PCB', desc: 'Auto-updated statutory contributions — always compliant with KWSP, PERKESO, and LHDN' },
-      { title: 'Bonus & Overtime Management', desc: 'Flexible bonus structures and overtime rates for all employee categories' },
-      { title: 'Bank Payment Files', desc: 'Generate ready-to-upload files for Maybank, CIMB, Public Bank, and all major banks' },
-      { title: 'EA Form & e-Data PCB', desc: 'One-click generation of EA Forms and e-Data submission files for tax filing' },
-      { title: 'Multi-Company Support', desc: 'Manage multiple legal entities and payroll groups from a single dashboard' },
-    ],
-  },
-  {
-    id: 'smartime',
-    name: 'Smartime',
-    subtitle: 'Time & Attendance',
-    tagline: 'Real-Time Attendance Tracking Across All Your Locations.',
-    color: '#06b6d4',
-    gradient: 'linear-gradient(135deg, #0e7490, #06b6d4)',
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <circle cx="12" cy="12" r="10"/>
-        <polyline points="12 6 12 12 16 14"/>
-        <path d="M8 2.5A9.96 9.96 0 0 1 12 2"/>
-      </svg>
-    ),
-    description: 'Smartime is a powerful time and attendance platform that supports face recognition, fingerprint, RFID card, and mobile clock-in — all feeding into a unified dashboard with real-time visibility.',
-    features: [
-      { title: 'Face Recognition Attendance', desc: 'Touchless, mask-tolerant face recognition for hygienic and accurate attendance' },
-      { title: 'Fingerprint & Card Clock-In', desc: 'Biometric fingerprint and RFID/IC card options for every workplace environment' },
-      { title: 'Mobile Clock-In via SmartGoGo', desc: 'GPS-verified mobile attendance for remote and field workers' },
-      { title: 'Multi-Branch & Multi-Shift', desc: 'Configure unlimited locations, departments, and shift schedules from one system' },
-      { title: 'Real-Time Dashboard', desc: 'Live attendance status, late arrivals, and absentee alerts for managers' },
-      { title: 'Overtime & Claim Calculation', desc: 'Automatic OT tracking linked directly to your payroll for accurate processing' },
-    ],
-  },
-  {
-    id: 'smartgogo',
-    name: 'SmartGoGo',
-    subtitle: 'Mobile HR App',
-    tagline: 'HR in the Palm of Your Hand — Anywhere, Anytime.',
-    color: '#8b5cf6',
-    gradient: 'linear-gradient(135deg, #5b21b6, #8b5cf6)',
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="5" y="2" width="14" height="20" rx="2"/>
-        <line x1="12" y1="18" x2="12.01" y2="18"/>
-        <circle cx="12" cy="18" r="0.5" fill="currentColor"/>
-      </svg>
-    ),
-    description: 'SmartGoGo is the employee-facing mobile app that puts attendance, leave, claims, and payslips at everyone\'s fingertips — reducing HR admin while improving the employee experience.',
-    features: [
-      { title: 'GPS-Based Mobile Attendance', desc: 'Clock in/out with location verification — ideal for field staff and remote teams' },
-      { title: 'Leave Application & Approval', desc: 'Apply for leave on mobile; managers approve or reject instantly with notifications' },
-      { title: 'Expense Claims', desc: 'Submit claims with photo receipts and track approval status in real time' },
-      { title: 'E-Payslip Access', desc: 'Employees view and download their payslips securely — no more printing needed' },
-      { title: 'Shift Scheduling', desc: 'View assigned shifts and swap requests directly through the app' },
-      { title: 'Push Notifications', desc: 'Instant alerts for approvals, rejections, payroll processing, and announcements' },
-    ],
-  },
-  {
     id: 'vms',
     name: 'VMS',
     subtitle: 'Visitor Management System',
-    tagline: 'Professional Visitor Control from Reception to Exit.',
-    color: '#10b981',
-    gradient: 'linear-gradient(135deg, #065f46, #10b981)',
+    tagline: 'Visitor management system Malaysia for offices, buildings and factories.',
+    color: '#0e7490',
+    gradient: 'linear-gradient(135deg, #075985, #0e7490)',
     icon: (
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
         <circle cx="9" cy="7" r="4"/>
         <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
         <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-        <polyline points="20 6 22 8 26 4" transform="translate(-6 0)"/>
       </svg>
     ),
-    description: 'The Smart Touch Visitor Management System digitises your visitor registration process — replacing paper logbooks with a secure, trackable, and professional system for modern workplaces.',
+    description: 'Smartgogo VMS is a visitor management system for Malaysian offices, buildings and factories. Replace paper logbooks with visitor pre-registration, QR check-in, host notification, face verification and searchable visitor audit records.',
     features: [
-      { title: 'QR Code Self-Registration', desc: 'Visitors pre-register via QR link and scan in on arrival — no queue at reception' },
-      { title: 'Kiosk & Mobile VMS', desc: 'Tablet kiosk at reception or mobile-based check-in for flexible deployment' },
-      { title: 'Host Notification', desc: 'Automatic SMS or app alert to the host employee when their visitor arrives' },
-      { title: 'Photo Capture & Badge Printing', desc: 'Capture visitor photos and print visitor badges automatically on arrival' },
-      { title: 'Access Tracking & Audit Log', desc: 'Full log of all visitor movements — who visited, when, and which areas accessed' },
-      { title: 'Blacklist & Watchlist', desc: 'Flag restricted visitors and prevent unauthorised access with alerts' },
+      { title: 'QR Pre-Registration', desc: 'Invite visitors before arrival and reduce reception queue time' },
+      { title: 'Face or QR Check-In', desc: 'Verify guests quickly using face recognition, QR or kiosk workflows' },
+      { title: 'Host Notifications', desc: 'Alert employees when their visitor arrives at the site' },
+      { title: 'Watchlist Control', desc: 'Flag restricted visitors and trigger security alerts' },
+      { title: 'Badge and Photo Record', desc: 'Capture visitor identity and print badges where required' },
+      { title: 'Audit Trail', desc: 'Search every visit by person, company, host, date and purpose' },
     ],
   },
   {
-    id: 'canteen',
-    name: 'Canteen',
-    subtitle: 'Canteen Management System',
-    tagline: 'Control Every Meal. Eliminate Subsidy Fraud.',
-    color: '#f59e0b',
-    gradient: 'linear-gradient(135deg, #92400e, #f59e0b)',
-    icon: (
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M3 11l19-9-9 19-2-8-8-2z"/>
-      </svg>
-    ),
-    description: 'The Smart Touch Canteen Management System gives HR and facilities teams complete control over employee meal entitlements — from face recognition at the counter to automated subsidy reporting.',
-    features: [
-      { title: 'Meal Entitlement Control', desc: 'Configure daily, weekly, or per-meal allowances for each employee category' },
-      { title: 'Face / Card / QR Consumption', desc: 'Multiple verification methods at the canteen counter for fast, accurate deduction' },
-      { title: 'Subsidy Management', desc: 'Define company subsidy rules and auto-calculate employee vs company portions' },
-      { title: 'Fraud Prevention', desc: 'Prevent sharing, over-claiming, and ghost consumption with biometric verification' },
-      { title: 'Menu & Pricing Control', desc: 'Manage canteen menus, prices, and daily specials through the admin panel' },
-      { title: 'Reporting Dashboard', desc: 'Daily consumption reports, cost analysis, and subsidy summaries for payroll' },
-    ],
-  },
-  {
-    id: 'dormitory',
-    name: 'Dormitory',
-    subtitle: 'Dormitory & Hostel Management',
-    tagline: 'End-to-End Worker Accommodation Compliance.',
-    color: '#ef4444',
-    gradient: 'linear-gradient(135deg, #7f1d1d, #ef4444)',
+    id: 'dms',
+    name: 'DMS',
+    subtitle: 'Dormitory Management System',
+    tagline: 'Dormitory management system Malaysia for worker hostels and accommodation.',
+    color: '#0f766e',
+    gradient: 'linear-gradient(135deg, #134e4a, #0f766e)',
     icon: (
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
         <polyline points="9 22 9 12 15 12 15 22"/>
       </svg>
     ),
-    description: 'Designed for manufacturers and employers managing foreign worker hostels, the Dormitory Management System ensures compliance with Malaysian labour housing regulations while simplifying day-to-day operations.',
+    description: 'Smartgogo DMS is a dormitory management system for employers managing worker hostels in Malaysia. Track rooms, beds, occupancy, worker movement, maintenance cases and accommodation records from one dashboard.',
     features: [
-      { title: 'Worker Registration & Bed Allocation', desc: 'Register workers and assign rooms or beds with full occupancy tracking' },
-      { title: 'Attendance & Access Monitoring', desc: 'Biometric check-in/out at dormitory gates for security and curfew compliance' },
-      { title: 'Compliance Reporting', desc: 'Generate reports required by JTKSM, CIDB, and other regulatory bodies' },
-      { title: 'Maintenance & Incident Tracking', desc: 'Log maintenance requests and incidents with resolution tracking' },
-      { title: 'Utility Billing', desc: 'Track electricity and water usage per room and deduct from payroll if required' },
-      { title: 'Worker Movement Records', desc: 'Full audit trail of entries, exits, and overnight absences' },
+      { title: 'Bed Allocation', desc: 'Assign rooms and beds with current occupancy visibility' },
+      { title: 'Dormitory Access', desc: 'Record worker check-in and check-out using connected identity' },
+      { title: 'Movement Records', desc: 'Track overnight absence, curfew and return-to-hostel events' },
+      { title: 'Utility Tracking', desc: 'Capture utility usage for rooms or blocks where needed' },
+      { title: 'Maintenance Logs', desc: 'Manage repair requests, incidents and follow-up status' },
+      { title: 'Compliance Reports', desc: 'Prepare worker accommodation records for internal and external audits' },
     ],
   },
   {
-    id: 'biometric',
-    name: 'Biometric Solutions',
-    subtitle: 'Hardware & Access Control',
-    tagline: 'Industry-Grade Biometric Hardware — Supplied & Supported Locally.',
-    color: '#64748b',
-    gradient: 'linear-gradient(135deg, #1e293b, #475569)',
+    id: 'cms',
+    name: 'CMS',
+    subtitle: 'Canteen Subsidy System',
+    tagline: 'Canteen subsidy system Malaysia for factory meal entitlement control.',
+    color: '#c47f00',
+    gradient: 'linear-gradient(135deg, #92400e, #c47f00)',
+    icon: (
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 11l19-9-9 19-2-8-8-2z"/>
+      </svg>
+    ),
+    description: 'Smartgogo CMS is a canteen subsidy system for Malaysian factories. Control employee meal entitlement, subsidy rules, consumption by face, card or QR, duplicate meal alerts and daily canteen cost reports.',
+    features: [
+      { title: 'Meal Entitlement', desc: 'Set daily, weekly or shift-based meal allowances by worker group' },
+      { title: 'Face / Card / QR Use', desc: 'Verify consumption at the counter with the method that fits your site' },
+      { title: 'Subsidy Rules', desc: 'Calculate company subsidy and employee portion automatically' },
+      { title: 'Fraud Prevention', desc: 'Reduce sharing, duplicate meals and ghost consumption' },
+      { title: 'Menu and Pricing', desc: 'Manage canteen items, pricing and special meals centrally' },
+      { title: 'Consumption Reports', desc: 'Review daily usage, cost and subsidy summaries' },
+    ],
+  },
+  {
+    id: 'cws',
+    name: 'CWS',
+    subtitle: 'Construction Workforce System',
+    tagline: 'Construction workforce management system for site attendance and contractor control.',
+    color: '#b45309',
+    gradient: 'linear-gradient(135deg, #78350f, #b45309)',
+    icon: (
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M4 21V8l8-5 8 5v13"/>
+        <path d="M9 21v-6h6v6"/>
+        <path d="M8 11h8"/>
+      </svg>
+    ),
+    description: 'Smartgogo CWS is a construction workforce management system for contractors and project sites. Manage worker registration, induction status, site attendance, certification validity and project headcount.',
+    features: [
+      { title: 'Contractor Registry', desc: 'Keep contractors, subcontractors and workers organized by project' },
+      { title: 'Site Attendance', desc: 'Capture daily headcount through gate or mobile workflows' },
+      { title: 'Induction Status', desc: 'Track who is approved to enter before work begins' },
+      { title: 'Certification Checks', desc: 'Record permits, training and document validity' },
+      { title: 'Project Dashboard', desc: 'View workforce presence across sites and zones' },
+      { title: 'Safety Records', desc: 'Keep evidence ready for project and compliance review' },
+    ],
+  },
+  {
+    id: 'pal',
+    name: 'PAL',
+    subtitle: 'Payroll Attendance Leave System',
+    tagline: 'Payroll attendance leave system Malaysia for HR teams.',
+    color: '#1d4ed8',
+    gradient: 'linear-gradient(135deg, #1e3a8a, #1d4ed8)',
     icon: (
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         <path d="M9 12l2 2 4-4"/>
       </svg>
     ),
-    description: 'Smart Touch supplies, installs, and supports a full range of biometric and access control hardware — from facial recognition terminals to barrier gates — all integrated with our software platform.',
+    description: 'Smartgogo PAL is a payroll attendance leave system for Malaysian HR teams. Manage payroll processing, attendance records, leave applications, overtime, claims, payslips and HR reports.',
     features: [
-      { title: 'Face Recognition Terminals', desc: 'Touchless, AI-powered devices with mask detection — suitable for all industries' },
-      { title: 'Fingerprint Readers', desc: 'High-speed optical and capacitive fingerprint scanners for accurate ID' },
-      { title: 'RFID Card Systems', desc: 'Compatible with ISO 14443 and EM4100 cards and fobs' },
-      { title: 'Swing Barriers & Turnstiles', desc: 'Physical access barriers for controlled entry to production floors and offices' },
-      { title: 'Door Access Control', desc: 'Networked door controllers with tamper alarms and remote management' },
-      { title: 'Cloud-Connected Hardware', desc: 'All devices sync in real time to SmartPay and Smartime over LAN or 4G' },
+      { title: 'Payroll Processing', desc: 'Calculate salary, allowance, deduction and statutory contribution workflows' },
+      { title: 'Attendance Records', desc: 'Use verified clock-in events from face terminals or site devices' },
+      { title: 'Leave Management', desc: 'Apply, approve and track leave balances in one place' },
+      { title: 'Overtime and Claims', desc: 'Connect OT, claims and shift records to payroll preparation' },
+      { title: 'Payslip Access', desc: 'Prepare employee payroll records and payslip workflows' },
+      { title: 'HR Reporting', desc: 'Review payroll, attendance and leave data across teams or companies' },
     ],
+  },
+]
+
+const relatedProducts = [
+  {
+    name: 'SmartGoGo Mobile App',
+    keyword: 'attendance mobile app Malaysia',
+    copy: 'Mobile clock-in, leave application, claims submission, payslip access and manager approvals for employees on the move.',
+  },
+  {
+    name: 'SmartPay',
+    keyword: 'payroll software Malaysia',
+    copy: 'Payroll calculation, statutory contribution support, allowance, deduction and payslip workflows for Malaysian HR teams.',
+  },
+  {
+    name: 'Smartime',
+    keyword: 'time attendance system Malaysia',
+    copy: 'Attendance records from face recognition, fingerprint, card, QR, mobile app or time clock devices.',
+  },
+  {
+    name: 'SmartLeave',
+    keyword: 'leave management system Malaysia',
+    copy: 'Leave application, approval routing, leave balance, calendar visibility and HR leave reports.',
+  },
+  {
+    name: 'SmartClaim',
+    keyword: 'e-claim system Malaysia',
+    copy: 'Employee claim submission, receipt capture, approval status and claim records for payroll preparation.',
+  },
+  {
+    name: 'Face / QR / Card Devices',
+    keyword: 'face recognition attendance system Malaysia',
+    copy: 'Face recognition terminals, QR code, RFID card and access devices for attendance, visitor, canteen and workforce records.',
   },
 ]
 
 export default function Products() {
   return (
     <div className="products-page">
-      {/* Page hero */}
       <section className="page-hero">
         <div className="page-hero-bg" />
         <div className="container page-hero-content">
-          <span className="section-label">Our Products</span>
-          <h1 className="page-hero-title">Complete Workforce Management Suite</h1>
+          <span className="section-label">Smartgogo Systems</span>
+          <h1 className="page-hero-title">Workplace Management Software Malaysia for Visitors, Meals, Workers, Hostels and Payroll</h1>
           <p className="page-hero-desc">
-            Seven integrated products covering every aspect of HR and workforce operations — from payroll to biometric hardware. All built to work together.
+            Choose the system your operation needs: visitor management system, canteen subsidy system, construction workforce management, dormitory management system or PAL payroll attendance leave system.
           </p>
           <Link to="/contact" className="btn-primary">
             Request a Demo
@@ -192,15 +174,12 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Products */}
       <section className="section products-detail">
         <div className="container">
           {products.map((p, i) => (
             <div key={p.id} className={`product-detail-card ${i % 2 === 1 ? 'reverse' : ''}`}>
               <div className="product-detail-visual" style={{ background: p.gradient }}>
-                <div className="product-visual-icon">
-                  {p.icon}
-                </div>
+                <div className="product-visual-icon">{p.icon}</div>
                 <div className="product-visual-name">{p.name}</div>
                 <div className="product-visual-sub">{p.subtitle}</div>
                 <div className="product-visual-deco" />
@@ -239,12 +218,32 @@ export default function Products() {
         </div>
       </section>
 
-      {/* Bottom CTA */}
+      <section className="section related-products-section">
+        <div className="container">
+          <div className="section-header center">
+            <span className="section-label">Related Products</span>
+            <h2 className="section-title">Smartgogo HR, Attendance and Device Modules</h2>
+            <p className="section-subtitle">
+              These products support the main Smartgogo systems. Use them with PAL, VMS, CMS, CWS or DMS when your company needs mobile app access, payroll software, time attendance, leave, claims or face recognition devices.
+            </p>
+          </div>
+          <div className="related-products-grid">
+            {relatedProducts.map((item) => (
+              <article className="related-product-card" key={item.name}>
+                <span>{item.keyword}</span>
+                <h3>{item.name}</h3>
+                <p>{item.copy}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <section className="section products-bottom-cta">
         <div className="container">
           <div className="bottom-cta-inner">
-            <h2>Not sure which products you need?</h2>
-            <p>Our team will assess your workflow and recommend the right combination for your business size and industry.</p>
+            <h2>Not sure which system to start with?</h2>
+            <p>Our team will review your operation and recommend the right system for visitors, meals, workers, hostels or HR payroll.</p>
             <div className="bottom-cta-actions">
               <Link to="/contact" className="btn-primary">Talk to Our Team</Link>
               <a href="tel:+60733889903" className="btn-outline">

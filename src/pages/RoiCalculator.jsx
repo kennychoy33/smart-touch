@@ -77,7 +77,7 @@ export default function RoiCalculator() {
           <div className="roi-hero-badge">ROI Calculator</div>
           <h1 className="roi-hero-title">
             How Much Could You Save<br />
-            <span>with Smartouch?</span>
+            <span>with Smartgogo?</span>
           </h1>
           <p className="roi-hero-subtitle">
             Enter your business details below and see your projected savings in seconds.
@@ -275,7 +275,7 @@ export default function RoiCalculator() {
                   <div className="roi-hero-metric">
                     <div className="hero-metric-label">Annual Net Savings</div>
                     <div className="hero-metric-value">{formatRM(results.annualSavings)}</div>
-                    <div className="hero-metric-sub">per year with Smartouch</div>
+                    <div className="hero-metric-sub">per year with Smartgogo</div>
                   </div>
 
                   {/* Key metrics grid */}
@@ -326,7 +326,7 @@ export default function RoiCalculator() {
                         </svg>
                       </div>
                       <div className="metric-body">
-                        <div className="metric-label">Smartouch Cost</div>
+                        <div className="metric-label">Smartgogo Cost</div>
                         <div className="metric-value metric-value--muted">{formatRM(results.smartouchCost)}<span>/mo</span></div>
                       </div>
                     </div>
@@ -349,7 +349,7 @@ export default function RoiCalculator() {
                         <span className="breakdown-value positive">{formatRM(results.monthlyRevenue)}</span>
                       </div>
                       <div className="breakdown-row breakdown-row--divider">
-                        <span>Smartouch Subscription</span>
+                        <span>Smartgogo Subscription</span>
                         <span className="breakdown-value negative">-{formatRM(results.smartouchCost)}</span>
                       </div>
                       <div className="breakdown-row breakdown-row--total">
@@ -360,7 +360,7 @@ export default function RoiCalculator() {
                   </div>
 
                   <div className="roi-cta-block">
-                    <p>Ready to start saving? Talk to a Smartouch specialist.</p>
+                    <p>Ready to start saving? Talk to a Smartgogo specialist.</p>
                     <Link to="/contact" className="roi-cta-btn">
                       Book a Free Demo
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
@@ -371,7 +371,7 @@ export default function RoiCalculator() {
 
                   <p className="roi-disclaimer">
                     * Estimates based on industry averages. Actual savings vary by business.
-                    Smartouch is priced at RM 299/outlet/month.
+                    Smartgogo is priced at RM 299/outlet/month.
                   </p>
                 </div>
               )}

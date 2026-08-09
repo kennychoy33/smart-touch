@@ -55,14 +55,14 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  color: white;
+  color: var(--text-dark);
   transition: color 0.3s;
 }
 
 .logo-sub {
   font-size: 11px;
   font-weight: 500;
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--text-light);
   letter-spacing: 0.03em;
   transition: color 0.3s;
 }
@@ -82,19 +82,19 @@
   font-size: 14.5px;
   padding: 8px 14px;
   border-radius: var(--radius-sm);
-  color: rgba(255, 255, 255, 0.82);
+  color: var(--text-mid);
   transition: all 0.2s ease;
   text-decoration: none;
 }
 
 .nav-links a:hover {
-  color: white;
-  background: rgba(255, 255, 255, 0.12);
+  color: var(--secondary);
+  background: rgba(37, 99, 235, 0.07);
 }
 
 .nav-links a.active {
-  color: white;
-  background: rgba(255, 255, 255, 0.15);
+  color: var(--secondary);
+  background: rgba(37, 99, 235, 0.1);
   font-weight: 600;
 }
 
@@ -183,7 +183,7 @@
   display: block;
   width: 22px;
   height: 2px;
-  background: white;
+  background: var(--text-dark);
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;

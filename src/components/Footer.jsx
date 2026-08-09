@@ -20,12 +20,12 @@ export default function Footer() {
                   </svg>
                 </div>
                 <div>
-                  <span className="footer-logo-name">Smart Touch</span>
+                  <span className="footer-logo-name">Smartgogo</span>
                   <span className="footer-logo-sub">Technology</span>
                 </div>
               </Link>
               <p className="footer-tagline">
-                Malaysia's most trusted workforce management platform — integrated payroll, time attendance, and HR automation since 2004.
+                Smartgogo workplace management software in Malaysia: VMS, canteen subsidy, construction workforce, dormitory management and PAL payroll attendance leave systems.
               </p>
               <div className="footer-social">
                 <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -50,21 +50,20 @@ export default function Footer() {
               <h4>Quick Links</h4>
               <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/products">Products</Link></li>
+                <li><Link to="/products">Solutions</Link></li>
                 <li><Link to="/about">About Us</Link></li>
                 <li><Link to="/contact">Contact</Link></li>
               </ul>
             </div>
 
             <div className="footer-col">
-              <h4>Our Products</h4>
+              <h4>Our Systems</h4>
               <ul>
-                <li><Link to="/products">SmartPay — Payroll</Link></li>
-                <li><Link to="/products">Smartime — Attendance</Link></li>
-                <li><Link to="/products">SmartGoGo — Mobile HR</Link></li>
-                <li><Link to="/products">Visitor Management</Link></li>
-                <li><Link to="/products">Canteen Management</Link></li>
-                <li><Link to="/products">Biometric Solutions</Link></li>
+                <li><Link to="/products">Visitor Management System Malaysia</Link></li>
+                <li><Link to="/products">Canteen Subsidy System Malaysia</Link></li>
+                <li><Link to="/products">Construction Workforce Management</Link></li>
+                <li><Link to="/products">Dormitory Management System Malaysia</Link></li>
+                <li><Link to="/products">Payroll Attendance Leave System</Link></li>
               </ul>
             </div>
 
