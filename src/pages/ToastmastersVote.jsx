@@ -2697,8 +2697,10 @@ function standardAgendaScheduleRows(rows, people, data, lang = 'zh', options = {
   const topicsEvaluatorRole = byKey.get('topics-evaluator')
 
   const standardFlow = [
-    rowFor('technical', text('\u6280\u672f\u7ecf\u7406', 'Technical Manager'), '15', 'technical', technicalRole),
-    rowFor('registration', text('\u767b\u8bb0\u4e0e\u4ea4\u6d41', 'Registration and networking'), '5', 'registration'),
+    ...(options.omitSetupRows ? [] : [
+      rowFor('technical', text('\u6280\u672f\u7ecf\u7406', 'Technical Manager'), '15', 'technical', technicalRole),
+      rowFor('registration', text('\u767b\u8bb0\u4e0e\u4ea4\u6d41', 'Registration and networking'), '5', 'registration'),
+    ]),
     rowFor('sergeant', text('\u793c\u5bbe\u53f8\u81f4\u6b22\u8fce\u8bcd', 'Sergeant at Arms welcome'), '3', 'sergeant'),
     rowFor('president', text('\u4f1a\u957f\u81f4\u5f00\u4f1a\u8bcd', 'President opening address'), '5', 'president', presidentRole),
     rowFor('toastmaster', text('\u53f8\u4eea\u4ecb\u7ecd\u8282\u76ee\u6d41\u7a0b', 'Introduce the meeting program'), '5', 'toastmaster', toastmasterRole),
@@ -3218,7 +3220,7 @@ function MeetingView({ data, setData, persistState, people, setPeople, persistPe
     const en = exportLang === 'en'
     const bi = exportLang === 'bi'
     const label = (zh, english) => bi ? `${zh} / ${english}` : (en ? english : zh)
-    const exportRows = standardAgendaScheduleRows(agendaRowsFromTemplate(settings, meetingOps.roles), people, data, exportLang)
+    const exportRows = standardAgendaScheduleRows(agendaRowsFromTemplate(settings, meetingOps.roles), people, data, exportLang, { omitSetupRows: true })
     const infoRows = [
       [label('分会名称', 'Club Name'), settings.clubName || t.club],
       ['Toastmaster ID', settings.toastmasterId || ''],
@@ -3302,7 +3304,7 @@ function MeetingView({ data, setData, persistState, people, setPeople, persistPe
 
   const agendaPrintRows = agendaRowsFromTemplate(settings, meetingOps.roles)
   const agendaLang = settings.agendaLanguage === 'auto' || !settings.agendaLanguage ? uiLang : settings.agendaLanguage
-  const agendaSchedule = standardAgendaScheduleRows(agendaPrintRows, people, data, agendaLang, { compactPrint: true })
+  const agendaSchedule = standardAgendaScheduleRows(agendaPrintRows, people, data, agendaLang, { compactPrint: true, omitSetupRows: true })
   const agendaText = agendaLang === 'bi'
     ? {
         motto: '中爱吾会， 化雨春风， 齐展翅 / Where Leaders Are Made',
