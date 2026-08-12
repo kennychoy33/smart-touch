@@ -3305,12 +3305,15 @@ function MeetingView({ data, setData, persistState, people, setPeople, persistPe
   const agendaPrintRows = agendaRowsFromTemplate(settings, meetingOps.roles)
   const agendaLang = settings.agendaLanguage === 'auto' || !settings.agendaLanguage ? uiLang : settings.agendaLanguage
   const agendaSchedule = standardAgendaScheduleRows(agendaPrintRows, people, data, agendaLang, { compactPrint: true, omitSetupRows: true })
+  const agendaClubName = settings.clubName || t.club
+  const agendaClubSubtitle = settings.clubShort || (agendaLang === 'en' ? 'Toastmasters Club' : t.clubShort)
+  const agendaRegistrationId = settings.toastmasterId || ''
   const agendaText = agendaLang === 'bi'
     ? {
         motto: '中爱吾会， 化雨春风， 齐展翅 / Where Leaders Are Made',
-        registration: '国际讲演会注册编号 / Toastmasters International Registration No.',
-        area: '（102区域 M3分区 / District 102, Division M3）',
-        rightMark: '中华校友会 / Toastmasters Club',
+        registration: 'Toastmaster ID',
+        area: '',
+        rightMark: agendaClubSubtitle,
         purposeTitle: '宗旨 / Purpose: ',
         purpose1: '1. 提供会友一个互相交流与切磋的机会。 / Provide members a supportive environment to communicate, learn, and grow together.',
         purpose2: '2. 让会友逐步掌握演讲技巧，学习领导技能，提升自信与修养。 / Help members improve public speaking and leadership skills with confidence and mutual respect.',
@@ -3329,9 +3332,9 @@ function MeetingView({ data, setData, persistState, people, setPeople, persistPe
     : agendaLang === 'en'
     ? {
         motto: 'Where Leaders Are Made',
-        registration: 'Toastmasters International Registration No.',
-        area: '(District 102, Division M3)',
-        rightMark: 'Toastmasters Club',
+        registration: 'Toastmaster ID',
+        area: '',
+        rightMark: agendaClubSubtitle,
         purposeTitle: 'Purpose:',
         purpose1: '1. Provide members a supportive environment to communicate, learn, and grow together.',
         purpose2: '2. Help members improve public speaking and leadership skills with confidence and mutual respect.',
@@ -3349,9 +3352,9 @@ function MeetingView({ data, setData, persistState, people, setPeople, persistPe
       }
     : {
         motto: '中爱吾会， 化雨春风， 齐展翅',
-        registration: '国际讲演会注册编号',
-        area: '（102区域 M3分区）',
-        rightMark: '中华校友会',
+        registration: 'Toastmaster ID',
+        area: '',
+        rightMark: agendaClubSubtitle,
         purposeTitle: '宗旨：',
         purpose1: '1. 提供会友一个互相交流与切磋的机会。',
         purpose2: '2. 让会友在友好与和谐的气氛中逐步掌握演讲技巧，学习领导技能，从而培养自信心提升个人修养。',
@@ -3632,9 +3635,9 @@ function MeetingView({ data, setData, persistState, people, setPeople, persistPe
                 {settings.logoDataUrl && <img className="tm-agenda-logo" src={settings.logoDataUrl} alt={t.clubShort} />}
               </div>
               <div>
-                <h1>{t.club}</h1>
-                <h3>CHUNG HWA ALUMNI ASSOCIATION MANDARIN TOASTMASTERS CLUB</h3>
-                <p>{agendaText.registration}: {settings.toastmasterId || 'CB-00003015'} {agendaText.area}</p>
+                <h1>{agendaClubName}</h1>
+                <h3>{agendaClubSubtitle}</h3>
+                {agendaRegistrationId && <p>{agendaText.registration}: {agendaRegistrationId} {agendaText.area}</p>}
               </div>
               <div className="tm-agenda-logo-box right-mark">
                 <span>{agendaText.rightMark}</span>
@@ -3648,10 +3651,6 @@ function MeetingView({ data, setData, persistState, people, setPeople, persistPe
               <div>
                 <p>{agendaText.topic}: {data.meeting.theme || t.pending}</p>
                 <p>{agendaText.word}: {data.meeting.word || t.pending}</p>
-              </div>
-              <div className="tm-agenda-qr-note">{agendaText.qrNote}</div>
-              <div className="tm-agenda-qr">
-                <QrBlock value={voteLink} compact />
               </div>
             </div>
             <table className="tm-agenda-table">

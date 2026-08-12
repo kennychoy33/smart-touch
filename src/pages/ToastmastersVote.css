@@ -1753,18 +1753,18 @@
 
 .tm-agenda-template-head {
   display: grid;
-  grid-template-columns: 112px 1fr 112px;
+  grid-template-columns: 90px 1fr 90px;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
   text-align: center;
-  padding: 12px 14px 8px;
+  padding: 9px 12px 6px;
   border-bottom: 1.5px solid #050505;
 }
 
 .tm-agenda-template-head h1 {
   margin: 0;
   color: #050505;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.08;
   font-weight: 900;
 }
@@ -1772,7 +1772,7 @@
 .tm-agenda-template-head h3 {
   margin: 5px 0 2px;
   color: #050505;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 900;
 }
 
@@ -1784,7 +1784,7 @@
 }
 
 .tm-agenda-logo-box {
-  min-height: 82px;
+  min-height: 62px;
   display: grid;
   place-items: center;
   color: #375f30;
@@ -1828,7 +1828,7 @@
 
 .tm-agenda-title-bar {
   display: grid;
-  grid-template-columns: 1fr 210px;
+  grid-template-columns: 1fr 190px;
   align-items: center;
   background: #0f5d99;
   color: white;
@@ -1849,35 +1849,26 @@
 
 .tm-agenda-topic-row {
   display: grid;
-  grid-template-columns: 1fr 190px 120px;
+  grid-template-columns: 1fr;
   align-items: center;
-  min-height: 88px;
+  min-height: 70px;
   background: #ddeaf6;
   border-bottom: 1.5px solid #050505;
 }
 
 .tm-agenda-topic-row p {
-  margin: 8px 12px;
-  font-size: 24px;
+  margin: 6px 12px;
+  font-size: 23px;
   line-height: 1.2;
   font-weight: 900;
 }
 
 .tm-agenda-qr-note {
-  position: relative;
-  border: 2px solid #2d4f72;
-  background: white;
-  padding: 14px 8px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.35;
-  font-weight: 800;
+  display: none;
 }
 
 .tm-agenda-qr {
-  display: grid;
-  place-items: center;
-  padding: 4px;
+  display: none;
 }
 
 .tm-agenda-qr .tm-qr {
@@ -2001,31 +1992,31 @@
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-template-head {
-  grid-template-columns: 27mm 1fr 27mm;
-  gap: 2mm;
-  padding: 2.2mm 4mm 1.5mm;
+  grid-template-columns: 20mm 1fr 20mm;
+  gap: 1.5mm;
+  padding: 1.7mm 3mm 1.2mm;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-template-head h1 {
-  font-size: 20pt;
+  font-size: 18pt;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-template-head p {
-  font-size: 10pt;
+  font-size: 8.6pt;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-template-head h3 {
-  font-size: 13pt;
+  font-size: 10.5pt;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-logo {
-  max-width: 22mm;
-  max-height: 22mm;
+  max-width: 17mm;
+  max-height: 17mm;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-logo-box {
-  min-height: 21mm;
-  font-size: 8pt;
+  min-height: 15mm;
+  font-size: 7.4pt;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-purpose {
@@ -2037,37 +2028,35 @@
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-title-bar {
-  grid-template-columns: 1fr 52mm;
-  padding: 1.6mm 5mm;
+  grid-template-columns: 1fr 43mm;
+  padding: 1.35mm 4mm;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-title-bar strong,
 .tm-agenda-print.pdf-export .tm-agenda-title-bar span {
-  font-size: 25pt;
+  font-size: 22pt;
   line-height: 1;
   white-space: nowrap;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-topic-row {
-  grid-template-columns: 1fr 37mm 29mm;
-  min-height: 25mm;
+  grid-template-columns: 1fr;
+  min-height: 17mm;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-topic-row p {
-  font-size: 19.5pt;
+  font-size: 17.4pt;
   line-height: 1.1;
-  margin: 1.5mm 3mm;
+  margin: 1mm 3mm;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-qr-note {
-  font-size: 12pt;
-  padding: 4mm 2mm;
+  display: none;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-qr .tm-qr,
 .tm-agenda-print.pdf-export .tm-agenda-qr .tm-qr img {
-  width: 26mm;
-  height: 26mm;
+  display: none;
 }
 
 .tm-agenda-print.pdf-export .tm-agenda-table th {
@@ -2362,31 +2351,31 @@
   }
 
   .tm-agenda-template-head {
-    grid-template-columns: 27mm 1fr 27mm;
-    gap: 2mm;
-    padding: 2.2mm 4mm 1.5mm;
+    grid-template-columns: 20mm 1fr 20mm;
+    gap: 1.5mm;
+    padding: 1.7mm 3mm 1.2mm;
   }
 
   .tm-agenda-template-head h1 {
-    font-size: 20pt;
+    font-size: 18pt;
   }
 
   .tm-agenda-template-head p {
-    font-size: 10pt;
+    font-size: 8.6pt;
   }
 
   .tm-agenda-template-head h3 {
-    font-size: 13pt;
+    font-size: 10.5pt;
   }
 
   .tm-agenda-logo {
-    max-width: 22mm;
-    max-height: 22mm;
+    max-width: 17mm;
+    max-height: 17mm;
   }
 
   .tm-agenda-logo-box {
-    min-height: 21mm;
-    font-size: 8pt;
+    min-height: 15mm;
+    font-size: 7.4pt;
   }
 
   .tm-agenda-print h2 {
@@ -2399,50 +2388,48 @@
   }
 
   .tm-agenda-title-bar {
-    grid-template-columns: 1fr 52mm;
-    padding: 2.4mm 5mm;
+    grid-template-columns: 1fr 43mm;
+    padding: 1.35mm 4mm;
   }
 
   .tm-agenda-title-bar strong,
   .tm-agenda-title-bar span {
-    font-size: 28pt;
+    font-size: 22pt;
   }
 
   .tm-agenda-topic-row {
-    grid-template-columns: 1fr 37mm 29mm;
-    min-height: 29mm;
+    grid-template-columns: 1fr;
+    min-height: 17mm;
   }
 
   .tm-agenda-topic-row p {
-    font-size: 21.5pt;
-    margin: 2mm 3mm;
+    font-size: 17.4pt;
+    margin: 1mm 3mm;
   }
 
   .tm-agenda-qr-note {
-    font-size: 12pt;
-    padding: 4mm 2mm;
+    display: none;
   }
 
   .tm-agenda-qr .tm-qr,
   .tm-agenda-qr .tm-qr img {
-    width: 26mm;
-    height: 26mm;
+    display: none;
   }
 
   .tm-agenda-table th {
-    font-size: 14.6pt;
-    padding: 1.8mm 1mm;
+    font-size: 13.2pt;
+    padding: 1.2mm 1mm;
   }
 
   .tm-agenda-table td {
-    font-size: 11.6pt;
-    line-height: 1.12;
-    padding: 0.95mm 2mm;
+    font-size: 10.8pt;
+    line-height: 1.08;
+    padding: 0.65mm 1.5mm;
   }
 
   .tm-agenda-table tr.section td {
-    font-size: 12.8pt;
-    padding: 1mm 2mm;
+    font-size: 11.8pt;
+    padding: .7mm 1.5mm;
   }
 
   .tm-agenda-footer {
